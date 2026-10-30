@@ -62,6 +62,26 @@ public class Main {
         } catch (IllegalArgumentException exception) {
             System.out.println(exception.getClass().getSimpleName() + ": " + exception.getMessage());
         }
+        
+        // Additional validation tests
+        System.out.println("\nADDITIONAL VALIDATION TESTS");
+
+        // Test that an invalid technician name is rejected
+        try {
+            new Technician("");
+        } catch (IllegalArgumentException exception) {
+            System.out.println("Blank technician name rejected: "
+                    + exception.getMessage());
+        }
+
+        // Test that a request with invalid base points is rejected
+        try {
+            new PasswordResetRequest(8, "Invalid points", 0, "student01");
+        } catch (IllegalArgumentException exception) {
+            System.out.println("Invalid base points rejected: "
+                    + exception.getMessage());
+        }
+
         System.out.println();
         desk.printAllRequests();
         System.out.println();
