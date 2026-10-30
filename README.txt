@@ -4,7 +4,9 @@ CMP_SC / INFOTC 3330 - Group Assignment 2
 IDE used: Eclipse IDE for Java Developers
 
 Group members: Nate Rogala and Shane Singh
+
 github repository: 
+https://github.com/naterogala05/CampusITHelpDesk
 
 How to run:
 Open src/helpdesk/Main.java.
